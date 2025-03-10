@@ -78,9 +78,38 @@ $(document).ready(function () {
       // },
     },
   });
+  var swiperSklad = new Swiper(".sklad_swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 180000,
+    },
+    // effect: "fade",
+    loop: false,
+    on: {
+      slideChange: function () {
+        document.getElementById("current-slide-sklad").textContent = this.realIndex + 1;
+      },
+    },
+    navigation: {
+      nextEl: ".warehouses_section .slider_btns .next",
+      prevEl: ".warehouses_section .slider_btns .prev",
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+      },
+      // 991: {
+      //   slidesPerView: 2,
+      // },
+      // 1250: {
+      //   slidesPerView: 1,
+      // },
+    },
+  });
 
   var swiperPartners = new Swiper(".partner_section .swiper-container", {
-    slidesPerView: 3,
+    slidesPerView: 2.4,
     spaceBetween: 20,
     autoplay: {
       delay: 180000,
@@ -98,14 +127,14 @@ $(document).ready(function () {
     },
     breakpoints: {
       767: {
+        slidesPerView: 3,
+      },
+      991: {
+        slidesPerView: 4,
+      },
+      1250: {
         slidesPerView: 6,
       },
-      // 991: {
-      //   slidesPerView: 2,
-      // },
-      // 1250: {
-      //   slidesPerView: 1,
-      // },
     },
   });
 
