@@ -108,6 +108,36 @@ $(document).ready(function () {
     },
   });
 
+  var swiperPromotions = new Swiper(".promotions_swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 180000,
+    },
+    // effect: "fade",
+    loop: false,
+    on: {
+      slideChange: function () {
+        document.getElementById("current-slide-promotions").textContent = this.realIndex + 1;
+      },
+    },
+    navigation: {
+      nextEl: ".promotions_section .slider_btns .next",
+      prevEl: ".promotions_section .slider_btns .prev",
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 3,
+      },
+      // 991: {
+      //   slidesPerView: 2,
+      // },
+      // 1250: {
+      //   slidesPerView: 1,
+      // },
+    },
+  });
+
   var swiperPartners = new Swiper(".partner_section .swiper-container", {
     slidesPerView: 2.4,
     spaceBetween: 20,
