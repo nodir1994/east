@@ -127,13 +127,13 @@ $(document).ready(function () {
     },
     breakpoints: {
       767: {
+        slidesPerView: 2,
+      },
+      991: {
         slidesPerView: 3,
       },
-      // 991: {
-      //   slidesPerView: 2,
-      // },
       // 1250: {
-      //   slidesPerView: 1,
+      //   slidesPerView: 3,
       // },
     },
   });
