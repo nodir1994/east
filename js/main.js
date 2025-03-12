@@ -169,8 +169,8 @@ $(document).ready(function () {
   });
 
   var sertificate = new Swiper(".sertificate_section .swiper-container", {
-    slidesPerView: 1, // Faqat bitta slayd to‘liq ko‘rinadi
-    spaceBetween: -780, // Yon tomondagi slaydlarni yaqinlashtirish
+    slidesPerView: 1.7, // Faqat bitta slayd to‘liq ko‘rinadi
+    spaceBetween: 0, // Yon tomondagi slaydlarni yaqinlashtirish
     centeredSlides: true, // Markaziy slayd aktiv bo‘ladi
     loop: false, // Doimiy aylanib turish
     // navigation: {
@@ -184,6 +184,12 @@ $(document).ready(function () {
       depth: 300, // Orqaga chekinish effekti
       modifier: 2,
       slideShadows: false, // Soyalarni o‘chirish
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+        spaceBetween: -780,
+      },
     },
     on: {
       slideChange: function () {
