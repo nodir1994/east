@@ -39,38 +39,6 @@
         return false;
     });
 
-<<<<<<< HEAD
-=======
-  var swiperPromotions = new Swiper(".promotions_swiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    autoplay: {
-      delay: 180000,
-    },
-    // effect: "fade",
-    loop: false,
-    on: {
-      slideChange: function () {
-        document.getElementById("current-slide-promotions").textContent = this.realIndex + 1;
-      },
-    },
-    navigation: {
-      nextEl: ".promotions_section .slider_btns .next",
-      prevEl: ".promotions_section .slider_btns .prev",
-    },
-    breakpoints: {
-      767: {
-        slidesPerView: 2,
-      },
-      991: {
-        slidesPerView: 3,
-      },
-      // 1250: {
-      //   slidesPerView: 3,
-      // },
-    },
-  });
->>>>>>> bebf5846415118b653478343cbe4193dc35fc6ba
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -78,37 +46,6 @@
         time: 2000
     });
 
-<<<<<<< HEAD
-=======
-  var sertificate = new Swiper(".sertificate_section .swiper-container", {
-    slidesPerView: 1.7, // Faqat bitta slayd to‘liq ko‘rinadi
-    spaceBetween: 0, // Yon tomondagi slaydlarni yaqinlashtirish
-    centeredSlides: true, // Markaziy slayd aktiv bo‘ladi
-    loop: false, // Doimiy aylanib turish
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
-    effect: "coverflow",
-    coverflowEffect: {
-      rotate: 0, // Yon tomondagi slaydlar buriladi
-      stretch: 0,
-      depth: 300, // Orqaga chekinish effekti
-      modifier: 2,
-      slideShadows: false, // Soyalarni o‘chirish
-    },
-    breakpoints: {
-      767: {
-        slidesPerView: 1,
-        spaceBetween: -780,
-      },
-    },
-    on: {
-      slideChange: function () {
-        document.getElementById("current-slide-sertifikacte").textContent = this.realIndex + 1;
-      },
-    },
->>>>>>> bebf5846415118b653478343cbe4193dc35fc6ba
 
     // Date and time picker
     $('.date').datetimepicker({
